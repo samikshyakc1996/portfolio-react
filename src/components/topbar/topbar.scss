@@ -17,17 +17,29 @@
         .topbar-left{
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width:60%;
+        align-items: center;
 
             .logo{
                 font-size: 3rem;
                 font-weight: 700;
                 text-decoration: none;
+                margin-right: 0.5em;
+            }
+            .icon-container{
+                display: flex;
+                align-items: center;
+               
+
+                .icon{
+                    margin-right: 0.5em;
+                }
             }
         }
 
         .topbar-right{
-           
+           width: 10%;
+
            .hamburger{
             display:flex;
             flex-direction: column;
@@ -60,7 +72,9 @@
     &.active{
         background-color: $maincolor;
         color:white;
-
+        .logo{
+            color:white;
+        }
         .hamburger{
             span{
             &:first-child{
