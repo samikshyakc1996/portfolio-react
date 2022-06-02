@@ -5,7 +5,7 @@ function Intro() {
   const textRef=useRef();
 
   useEffect(()=>{
-    console.log(textRef);
+   
     init(textRef.current, {
        showCursor: true,
        startDelay: 500,

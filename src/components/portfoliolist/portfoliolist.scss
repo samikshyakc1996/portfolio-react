@@ -1,0 +1,18 @@
+
+.Portfolio{
+    li{
+        background-color: white;
+        color:black;
+        font-size: 2rem;
+        margin: 0 2em;
+        padding: 0.5em;
+        border-radius: 10px;
+    
+
+    &.active{
+    background-color: blueviolet;
+    color:white;
+    }
+}
+
+}
