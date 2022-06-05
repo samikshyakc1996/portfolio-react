@@ -1,3 +1,136 @@
 .works{
-    background-color: yellow;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+    .arrow{
+        position: absolute;
+        height: auto;
+        width: 5%;
+        cursor: pointer;
+
+
+        &.left{    
+            left: 2em;
+            transform: rotateY(180deg);
+        }
+        &.right{    
+            right: 2em;
+        }
+            
+    }
+    
+
+
+    .slider{
+
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+        
+       
+
+        .container{
+            width: 100vw;
+            
+            display: flex;
+            justify-content: center;
+            // overflow: hidden;
+
+
+            .item{
+                display: flex;
+                background-color: white;
+                height: 100%;
+                width: 700px;
+                border-radius: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // overflow: hidden;
+                
+                .left{
+                    height: 100%;
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .leftContainer{
+
+                        width: 90%;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        .imgContainer{
+                            background-color: rgb(247, 177, 151);
+                            height: 4em;
+                            width: 4em;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                           
+                            
+                            img{
+                                
+                                width: 3em;
+                                
+                            }
+                           
+                    }
+                    h2{
+                        font-size: 2rem;
+
+                    }
+                    p{
+                        font-size: 1rem;
+
+                    }
+                }
+
+                }
+                .right{
+                    height: 100%;
+                    width: 70%;
+
+                    .imgContainer{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                          
+                            // align-items: center;
+
+                            
+
+
+                        img{
+                            height: 400px;
+                            width: auto;
+                            
+                            right: 0;
+                            
+                        }
+                    }
+
+                }
+
+            }
+
+
+            
+        }
+
+    }
 }

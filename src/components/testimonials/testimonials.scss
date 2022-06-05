@@ -1,3 +1,25 @@
 .testimonials{
-    background-color: pink;
+    background-color: rgb(213, 247, 249);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+
+    .container{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+      
+        height: 100%;
+        width: 75%;
+
+       
+
+        
+       
+    }
 }
