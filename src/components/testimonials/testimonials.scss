@@ -1,11 +1,21 @@
+@import "../../global.scss";
 .testimonials{
-    background-color: rgb(213, 247, 249);
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
+    @include mobile{
+        height: 100vh;
+        flex-direction: column;
+    }
     h1{
         font-size: 3rem;
         margin-top: 1em;
+        @include mobile{
+            font-size: 1.5rem;
+            
+
+        }
     }
 
     .container{
@@ -16,7 +26,10 @@
       
         height: 100%;
         width: 75%;
-
+        @include mobile{
+           
+            flex-direction: column;
+        }
        
 
         

@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .card{
     display: flex;
 justify-content: space-between;
@@ -9,13 +11,23 @@ border-radius: 20px;
 flex-direction: column;
 transition: all 0.2s ease-in;
 
-&.featured{
-    height: 70%;
-width: 350px;
-margin:0 2em;
-box-shadow: 0 0 15px -8px  rgb(234, 50, 197);
-
+@include mobile{
+   height: 220px;
+   width: 280px;
+  
+    
 }
+    &.featured{
+        height: 70%;
+        width: 350px;
+        margin:0 2em;
+        box-shadow: 0 0 15px -8px  rgb(234, 50, 197);
+        
+        @include mobile{
+        height: 220px;
+        width: 300px;   
+    }
+    }
 
 
 
@@ -27,13 +39,24 @@ box-shadow: 0 0 15px -8px  rgb(234, 50, 197);
         justify-content: space-around;
         width: 100%;
         align-items: center;
-        background-color: rgb(241, 241, 86);
+        background-color: rgb(241, 119, 143);
         border-radius: 0 0 50% 50% ;
         height: 30%;
         margin-bottom: 1em;
+        @include mobile{
+            
+            
+            
+         }
         img{
             height: 40px;
             width: 40px;
+            @include mobile{
+                height: 20px;
+                width: 20px;
+            
+            
+            }
         }
         .profile{
             display: flex;
@@ -42,12 +65,24 @@ box-shadow: 0 0 15px -8px  rgb(234, 50, 197);
             height: 100%;
             width: 40%;
             // background-color: pink;
+            @include mobile{
+                height: 100%;
+                width: 45%;
+            
+            
+            }
             
             .user-img{
-                height: 100px;
-                width: 90px;
+                height: 100%;
+                width: 90%;
                 border-radius: 50%;
                 border: 1px solid black;
+                @include mobile{
+                    height: 90%;
+                    width: 40%;
+                
+                
+                }
             }
         }
        
@@ -56,8 +91,22 @@ box-shadow: 0 0 15px -8px  rgb(234, 50, 197);
         width: 80%;
         background-color: rgb(242, 224, 239);
         border-radius: 10px;
+
+        @include mobile{
+           
+            
+        
+        
+        }
         p{
             padding: 1rem 2rem;
+            @include mobile{
+                padding: 2px;
+                font-size: 0.7rem;
+            
+            
+            }
+
         }
     }
 
@@ -68,12 +117,22 @@ box-shadow: 0 0 15px -8px  rgb(234, 50, 197);
         align-items: center;
         h1{
             font-size: 1.5rem;
+            @include mobile{
+               font-size: 1rem;
+            
+            
+            }
             
         }
         h2{
             font-size: 1.5rem;
             opacity: 0.6;
             margin:0.5em 0 1em 0;
+            @include mobile{
+                font-size: 1rem;
+             
+             
+             }
         }
     }
 

@@ -1,4 +1,4 @@
-
+@import "../../global.scss";
 .Portfolio{
     li{
         background-color: white;
@@ -8,10 +8,14 @@
         padding: 0.5em;
         border-radius: 10px;
         cursor: pointer;
-    
+   
+        @include mobile{
+        margin: 0 0.2em;
+        font-size: 1.5rem;
+    } 
 
     &.active{
-    background-color: blueviolet;
+    background-color: crimson;
     color:white;
     }
 }

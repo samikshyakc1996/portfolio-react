@@ -41,6 +41,7 @@ function Works() {
   };
   return (
     <div className='works' id='works'>
+      <h1>Work</h1>
       <div className="slider" style={{ transform:`translateX(-${currentslide*100}vw)`}}>    
           {data.map((d)=>(
             <div className="container">
